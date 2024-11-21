@@ -3,7 +3,7 @@
 ![Static Badge](https://img.shields.io/badge/Kubernetes-blue)
 ![Static Badge](https://img.shields.io/badge/MicroK8s-yellow)
 ![Static Badge](https://img.shields.io/badge/Helm-purple)
-![Static Badge](https://img.shields.io/badge/Docker-green)
+![Static Badge](https://img.shields.io/badge/Docker-blue)
 
 Overleaf deployment for kubernetes environment. 
 
