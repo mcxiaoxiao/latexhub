@@ -1,0 +1,31 @@
+apiVersion: v1
+data:
+  EMAIL_CONFIRMATION_DISABLED: "true"
+  ENABLE_CONVERSIONS: "true"
+  ENABLED_LINKED_FILE_TYPES: project_file,project_output_file
+  EXTERNAL_AUTH: none
+  OVERLEAF_MONGO_URL: mongodb://mongo-mongodb-headless.overleaf.svc.cluster.local/sharelatex
+  OVERLEAF_REDIS_HOST: redis-headless.overleaf.svc.cluster.local
+  REDIS_HOST: redis-headless.overleaf.svc.cluster.local
+  REDIS_PORT: "6379"
+  OVERLEAF_APP_NAME: Your Latexhub Online Editor
+  OVERLEAF_SITE_URL: http://latex.example.com
+  OVERLEAF_NAV_TITLE: Latexhub
+  OVERLEAF_EMAIL_FROM_ADDRESS: "example@example.com"
+  OVERLEAF_EMAIL_SMTP_HOST: "smtp.example.com"
+  OVERLEAF_EMAIL_SMTP_PORT: "587"
+  OVERLEAF_EMAIL_SMTP_USER: "example@example.com"
+  OVERLEAF_EMAIL_SMTP_PASS: "smtp pw"
+  OVERLEAF_EMAIL_SMTP_LOGGER: "true"
+  OVERLEAF_EMAIL_SMTP_TLS_REJECT_UNAUTH: "false"
+  OVERLEAF_EMAIL_SMTP_IGNORE_TLS: "false"
+  OVERLEAF_CUSTOM_EMAIL_FOOTER: "Hey! have problem? contact test@example.com"
+  OVERLEAF_HEADER_IMAGE_URL: https://cdn.example.com/logo.png
+  OVERLEAF_LEFT_FOOTER: "[{\"text\": \"left text 1\"},{\"text\": \"left text 2\"}]"
+  OVERLEAF_RIGHT_FOOTER: "[{\"text\": \"right text 1\", \"url\": \"mailto:test@example.com\"}]"
+  OVERLEAF_LANG_DOMAIN_MAPPING: "[{\"lngCode\": \"www\", \"url\": \"http://latex.example.com\"},{\"lngCode\": \"en\", \"url\": \"http://en.example.com\"}, {\"lngCode\": \"fr\", \"url\": \"http://fr.example.com\"}, {\"lngCode\": \"de\", \"url\": \"http://de.example.com\"}, {\"lngCode\": \"sv\", \"url\": \"http://sv.example.com\"}, {\"lngCode\": \"zh-CN\", \"url\": \"http://zh.example.com\"}, {\"lngCode\": \"es\", \"url\": \"http://es.example.com\"}]"
+kind: ConfigMap
+metadata:
+  labels:
+    io.kompose.service: sharelatex-variables
+  name: sharelatex-variables

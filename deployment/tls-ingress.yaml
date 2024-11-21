@@ -1,0 +1,76 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: overleaf-ingress
+  namespace: overleaf
+spec:
+  tls:
+  - hosts:
+    - latex.example.com
+    - fr.example.com
+    - de.example.com
+    - sv.example.com
+    - zh.example.com
+    - es.example.com
+    secretName: overleaf-tls-secret
+  rules:
+  - host: latex.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: sharelatex
+            port:
+              number: 80
+  - host: fr.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: sharelatex
+            port:
+              number: 80
+  - host: de.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: sharelatex
+            port:
+              number: 80
+  - host: sv.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: sharelatex
+            port:
+              number: 80
+  - host: zh.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: sharelatex
+            port:
+              number: 80
+  - host: es.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: sharelatex
+            port:
+              number: 80

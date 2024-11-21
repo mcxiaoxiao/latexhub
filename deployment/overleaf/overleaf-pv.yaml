@@ -1,0 +1,39 @@
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-5g-1
+spec:
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: /mnt/data1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-5g-2
+spec:
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: /mnt/data2
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-10g
+spec:
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: /mnt/data3
