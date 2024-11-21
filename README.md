@@ -1,4 +1,10 @@
 # latexhub
+<\br>
+![Static Badge](https://img.shields.io/badge/Overleaf-green)
+![Static Badge](https://img.shields.io/badge/Kubernetes-blue)
+![Static Badge](https://img.shields.io/badge/MicroK8s-yellow)
+![Static Badge](https://img.shields.io/badge/Graphql-purple)
+![Static Badge](https://img.shields.io/badge/Docker-green)
 
 Overleaf deployment for kubernetes environment. 
 
@@ -19,7 +25,7 @@ has been uploaded to [Docker Hub](https://hub.docker.com/r/abompotas/overleaf).
 However, you can build you own image using the Dockerfile in the [overleaf directory](/overleaf). 
 In this case, don't forget to push the new image to a registry edit the 
 [overleaf-deployment.yaml](/deployment/overleaf/overleaf-deployment.yaml) to point the correct image.
-If you are looking to switch from using local Persistent Volumes (LocalPVs) to NFS (Network File System) for permanent storage, please refer to [k8s-overleaf](https://github.com/abompotas/k8s-overleaf)
+If you are looking to switch from using local Persistent Volumes (LocalPVs) to NFS (Network File System) for permanent storage, please refer to [k8s-overleaf](https://github.com/abompotas/k8s-overleaf).
 
 Example:
 ```
