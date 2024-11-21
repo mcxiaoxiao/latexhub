@@ -1,4 +1,4 @@
-# latexhub
+# LaTeXHub
 ![Static Badge](https://img.shields.io/badge/Overleaf-green)
 ![Static Badge](https://img.shields.io/badge/Kubernetes-blue)
 ![Static Badge](https://img.shields.io/badge/MicroK8s-yellow)
