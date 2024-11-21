@@ -21,6 +21,7 @@ This deployment has been tested for a microk8s cluster with LocalPVs.
 
 A version of the modified [Overleaf](https://github.com/overleaf/overleaf) image that is required for this deployment
 has been uploaded to [Docker Hub](https://hub.docker.com/r/abompotas/overleaf).
+```docker pull abompotas/overleaf```
 However, you can build you own image using the Dockerfile in the [overleaf directory](/overleaf). 
 In this case, don't forget to push the new image to a registry edit the 
 [overleaf-deployment.yaml](/deployment/overleaf/overleaf-deployment.yaml) to point the correct image.
